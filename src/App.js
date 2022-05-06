@@ -23,7 +23,7 @@ const App = () => {
 
   return (
     <Fragment>
-      <NavBar setShow={setShow} />
+      <NavBar setShow={setShow} quantity={cart.length} />
       {show ? <Amazon handleClick={handleClick} /> : <Cart cart={cart} setCart={setCart} handleChange={handleChange} />}
     </Fragment>
   );
